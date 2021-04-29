@@ -1,94 +1,168 @@
-html, body
-{
-  height: 100%;
-  margin: 0;
+body{
+    background-image: linear-gradient(to bottom right, rgb(20, 203, 248), rgb(255, 0, 242));
+}
+.card0 {
+    box-shadow: 0px 4px 8px 0px #757575;
+    border-radius: 0px
 }
 
-body
-{
-background-image: linear-gradient(to right top, #33a0f1, #2591d9, #1882c1, #0a73aa, #006494);
+.card2 {
+    margin: 0px 40px
 }
 
-.header
-{
-	color: white;font-family: 'Yeon Sung';font-size: 45px;letter-spacing: 10px;margin-top: 80px;
-}
-.header img
-{
-	width: 80px;margin-left: -15px;
+.logo {
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 35px
 }
 
-.login_div
-{
-	background: rgba(255,255,255,0.8);float: none;border-radius: 15px;
+.image {
+    margin-left: 20px;
+    width: 360px;
+    height: 280px;
 }
 
-.logo
-{
-	width: 80px;margin-top: 30px;border-radius: 40px;
+.border-line {
+    border-right: 1px solid #EEEEEE
 }
 
-#login_button
-{
-	width: 80%;border-radius: 15px;
+.facebook {
+    background-color: #3b5998;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer
 }
 
-.room_name
-{
-	cursor: pointer;
-	font-size: 20px;
+.twitter {
+    background-color: #1DA1F2;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer
 }
 
-
-#logout
-{
-	font-size: 20px; float: right;
+.linkedin {
+    background-color: #2867B2;
+    color: #fff;
+    font-size: 18px;
+    padding-top: 5px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    cursor: pointer
 }
 
-
-#output
-{
-	padding: 10px; width:80%;background: rgba(255,255,255,0.8);border-radius: 15px;
+.line {
+    height: 1px;
+    width: 45%;
+    background-color: #E0E0E0;
+    margin-top: 10px
 }
 
-.input_div_room_page
-{
-	width: 80%;
+.or {
+    width: 10%;
+    font-weight: bold
 }
 
-.input_div label
-{
-	color: white;font-size: 20px;
+.text-sm {
+    font-size: 14px !important
 }
 
-
-.input_div_message_page
-{
-	position: fixed;bottom: 0px;width: 100%;background: rgba(255,255,255,0.8);
-}
-.input_div_message_page label
-{
-	color: black;
-}
-.input_div_message_page #msg
-{
-	width: 80%;
-}
-.input_div_message_page button
-{
-	margin-top: 15px;
-	width: 50%; 
-}
-.color_white
-{
-	color: white
+::placeholder {
+    color: #BDBDBD;
+    opacity: 1;
+    font-weight: 300
 }
 
-.user_tick
-{
-	width:20px;
+:-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 300
 }
-.message_h4
-{
-	padding-left:5px;color:grey;
+
+::-ms-input-placeholder {
+    color: #BDBDBD;
+    font-weight: 300
+}
+
+input,
+textarea {
+    padding: 10px 12px 10px 12px;
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+input:focus,
+textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #304FFE;
+    outline-width: 0
+}
+
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+a {
+    color: inherit;
+    cursor: pointer
+}
+
+.btn-blue {
+    background-color: #1A237E;
+    width: 150px;
+    color: #fff;
+    border-radius: 2px
+}
+
+.btn-blue:hover {
+    background-color: #000;
+    cursor: pointer
+}
+
+.bg-blue {
+    color: #fff;
+    background-color: #1A237E
+}
+
+@media screen and (max-width: 991px) {
+    .logo {
+        margin-left: 0px
+    }
+
+    .image {
+        width: 300px;
+        height: 220px
+    }
+
+    .border-line {
+        border-right: none
+    }
+
+    .card2 {
+        border-top: 1px solid #EEEEEE !important;
+        margin: 0px 15px
+    }
+}
+.loginbtn{
+    width: 200px;
 }
